@@ -1,0 +1,17 @@
+﻿
+Z:\projects\farmlyff\frontend\src\modules\user\pages\OrdersPage.jsx
+  8:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Z:\projects\farmlyff\frontend\src\modules\user\pages\ProfilePage.jsx
+    4:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u               no-unused-vars
+    9:8   error  'useUserStore' is defined but never used. Allowed unused vars must match /^[A-Z_]/u         no-unused-vars
+   13:21  error  'useReturns' is defined but never used. Allowed unused vars must match /^[A-Z_]/u           no-unused-vars
+   15:10  error  'useProducts' is defined but never used. Allowed unused vars must match /^[A-Z_]/u          no-unused-vars
+   17:8   error  'logo' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                 no-unused-vars
+   29:12  error  'copied' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u      no-unused-vars
+   29:20  error  'setCopied' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u   no-unused-vars
+  231:26  error  'error' is defined but never used                                                           no-unused-vars
+  853:11  error  'ordersData' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Ô£û 10 problems (10 errors, 0 warnings)
+

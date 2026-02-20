@@ -1,0 +1,15 @@
+﻿
+Z:\projects\farmlyff\frontend\src\modules\user\components\ReviewSection.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Z:\projects\farmlyff\frontend\src\modules\user\components\TopSellingProducts.jsx
+  2:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Z:\projects\farmlyff\frontend\src\modules\user\pages\OrdersPage.jsx
+  8:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Z:\projects\farmlyff\frontend\src\modules\user\pages\ProfilePage.jsx
+  4:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+Ô£û 4 problems (4 errors, 0 warnings)
+

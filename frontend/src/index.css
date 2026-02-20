@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Primary Palette */
+  --color-primary: #00A952;
+  --color-primaryHover: #009246;
+  --color-primaryDeep: #006B3C;
+
+  /* Backgrounds */
+  --color-background: #FFFFFF;
+  /* Main White */
+  --color-mint: #E6F7EF;
+  /* Soft Mint (Secondary BG) */
+  --color-primaryLight: #E6F7EF;
+  /* Alias for Mint */
+  --color-surface: #F8FAFC;
+  /* Off White (Page/Footer Text) */
+
+  /* Typography */
+  --color-textPrimary: #0F172A;
+  /* Primary Text */
+  --color-textSecondary: #64748B;
+  /* Secondary Text */
+
+  /* Accents & Alerts */
+  --color-offerRed: #E63946;
+  /* Discount/Sale */
+  --color-warning: #FACC15;
+  /* Warning/Stock */
+  --color-border: #E6F7EF;
+  /* Card Borders (using mint) */
+
+  /* Footer Colors */
+  --color-footerBg: #0F172A;
+  --color-footerText: #F8FAFC;
+
+  /* Legacy/Other (Keep minimal set if needed, or overwrite) */
+  --color-danger: #E63946;
+  /* Mapping danger to Offer Red for consistency */
+  --color-info: #2563EB;
+  --color-gold: #D4AF37;
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-textPrimary font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+  }
+
+  /* Firefox */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+  }
+
+  .skeleton {
+    background-color: #e9eef2;
+  }
+
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.55) 45%,
+      transparent 100%
+    );
+    animation: shimmer 1.2s infinite;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* React Quill Hyperlink Styling */
+.ql-snow .ql-editor a {
+    color: #2563EB !important; /* Bright Blue */
+    text-decoration: underline !important;
+}
